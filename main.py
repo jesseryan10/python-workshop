@@ -91,12 +91,12 @@ STAR_COLOR = (255, 255, 255) # try (200, 220, 255) for icy blue
 
 # ======= PLAYER ============================= #
 
-# --- emoji player ---
+### emoji player
 # set USE_EMOJI = True and change the emoji to use it as your character!
 PLAYER_EMOJI = "👾"
 USE_EMOJI = False
 
-# --- shape player (used when USE_EMOJI = False) ---
+### shape player (used when USE_EMOJI = False)
 # default is circle
 # to change shape, go to the DRAW PLAYER section below.
 
