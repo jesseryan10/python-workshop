@@ -7,6 +7,7 @@ import pygame
 import random
 from world import make_stars, cycle_sky, draw_stars, draw_sun, draw_ground, draw_trail, draw_player
 
+### setup - do not modify!
 pygame.init()
 
 WIDTH, HEIGHT = 600, 600
@@ -20,6 +21,11 @@ clock = pygame.time.Clock()
 ### Name your animation! This will appear in the title bar
 WINDOW_TITLE = "My World"   # change My World in the quotes to whatever you want
 pygame.display.set_caption(WINDOW_TITLE)
+
+### Uncomment if using a custom pixel image
+#player_sprite = pygame.image.load("player.png")
+#player_sprite = pygame.transform.scale(player_sprite, (60, 60))
+
 
 ###  colors
 GROUND_COLOR = (50, 200, 100)
@@ -93,6 +99,7 @@ STAR_COLOR = (255, 255, 255) # try (200, 220, 255) for icy blue
 
 ### emoji player
 # set USE_EMOJI = True and change the emoji to use it as your character!
+# ** currently configured for use on Windows, YMMV on macOS **
 PLAYER_EMOJI = "👾"
 USE_EMOJI = False
 
@@ -195,6 +202,7 @@ while running:
 # ======= DRAW PLAYER ======================== #
 
     draw_player(screen, x, y, USE_EMOJI, emoji_font, PLAYER_EMOJI, PLAYER_COLOR, PLAYER_SIZE)
+    #screen.blit(player_sprite, (x, y))
 
 # ============================================ #
 
